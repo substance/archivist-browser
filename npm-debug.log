@@ -1,0 +1,149 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'bodyParser',
+1 verbose cli   'methodOverride' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 warn package.json substance@1.0.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'bodyParser', null ]
+7 verbose cache add name=undefined spec="bodyParser" args=["bodyParser",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'bodyParser',
+8 verbose parsed url   path: 'bodyParser',
+8 verbose parsed url   href: 'bodyParser' }
+9 verbose cache add [ 'methodOverride', null ]
+10 verbose cache add name=undefined spec="methodOverride" args=["methodOverride",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'methodOverride',
+11 verbose parsed url   path: 'methodOverride',
+11 verbose parsed url   href: 'methodOverride' }
+12 silly lockFile caa4c3c7-bodyParser bodyParser
+13 verbose lock bodyParser /Users/danielbeilinson/.npm/caa4c3c7-bodyParser.lock
+14 silly lockFile 106534e5-methodOverride methodOverride
+15 verbose lock methodOverride /Users/danielbeilinson/.npm/106534e5-methodOverride.lock
+16 silly lockFile caa4c3c7-bodyParser bodyParser
+17 silly lockFile caa4c3c7-bodyParser bodyParser
+18 silly lockFile 106534e5-methodOverride methodOverride
+19 silly lockFile 106534e5-methodOverride methodOverride
+20 verbose addNamed [ 'bodyParser', '' ]
+21 verbose addNamed [ null, '*' ]
+22 silly lockFile e0b6bd45-bodyParser bodyParser@
+23 verbose lock bodyParser@ /Users/danielbeilinson/.npm/e0b6bd45-bodyParser.lock
+24 verbose addNamed [ 'methodOverride', '' ]
+25 verbose addNamed [ null, '*' ]
+26 silly lockFile 70c5ec60-methodOverride methodOverride@
+27 verbose lock methodOverride@ /Users/danielbeilinson/.npm/70c5ec60-methodOverride.lock
+28 silly addNameRange { name: 'bodyParser', range: '*', hasData: false }
+29 silly addNameRange { name: 'methodOverride', range: '*', hasData: false }
+30 verbose request where is /bodyParser
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id f11a1654239089a4
+33 verbose url raw /bodyParser
+34 verbose url resolving [ 'https://registry.npmjs.org/', './bodyParser' ]
+35 verbose url resolved https://registry.npmjs.org/bodyParser
+36 verbose request where is https://registry.npmjs.org/bodyParser
+37 info trying registry request attempt 1 at 00:07:36
+38 http GET https://registry.npmjs.org/bodyParser
+39 verbose request where is /methodOverride
+40 verbose request registry https://registry.npmjs.org/
+41 verbose url raw /methodOverride
+42 verbose url resolving [ 'https://registry.npmjs.org/', './methodOverride' ]
+43 verbose url resolved https://registry.npmjs.org/methodOverride
+44 verbose request where is https://registry.npmjs.org/methodOverride
+45 info trying registry request attempt 1 at 00:07:36
+46 http GET https://registry.npmjs.org/methodOverride
+47 http 404 https://registry.npmjs.org/methodOverride
+48 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+48 verbose headers   'content-type': 'application/json',
+48 verbose headers   'cache-control': 'max-age=0',
+48 verbose headers   'content-length': '51',
+48 verbose headers   'accept-ranges': 'bytes',
+48 verbose headers   date: 'Thu, 18 Jun 2015 21:07:37 GMT',
+48 verbose headers   via: '1.1 varnish',
+48 verbose headers   age: '0',
+48 verbose headers   connection: 'keep-alive',
+48 verbose headers   'x-served-by': 'cache-fra1230-FRA',
+48 verbose headers   'x-cache': 'MISS',
+48 verbose headers   'x-cache-hits': '0',
+48 verbose headers   'x-timer': 'S1434661656.632990,VS0,VE404' }
+49 silly registry.get cb [ 404,
+49 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+49 silly registry.get     'content-type': 'application/json',
+49 silly registry.get     'cache-control': 'max-age=0',
+49 silly registry.get     'content-length': '51',
+49 silly registry.get     'accept-ranges': 'bytes',
+49 silly registry.get     date: 'Thu, 18 Jun 2015 21:07:37 GMT',
+49 silly registry.get     via: '1.1 varnish',
+49 silly registry.get     age: '0',
+49 silly registry.get     connection: 'keep-alive',
+49 silly registry.get     'x-served-by': 'cache-fra1230-FRA',
+49 silly registry.get     'x-cache': 'MISS',
+49 silly registry.get     'x-cache-hits': '0',
+49 silly registry.get     'x-timer': 'S1434661656.632990,VS0,VE404' } ]
+50 silly lockFile 70c5ec60-methodOverride methodOverride@
+51 silly lockFile 70c5ec60-methodOverride methodOverride@
+52 http 404 https://registry.npmjs.org/bodyParser
+53 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+53 verbose headers   'content-type': 'application/json',
+53 verbose headers   'cache-control': 'max-age=0',
+53 verbose headers   'content-length': '51',
+53 verbose headers   'accept-ranges': 'bytes',
+53 verbose headers   date: 'Thu, 18 Jun 2015 21:07:37 GMT',
+53 verbose headers   via: '1.1 varnish',
+53 verbose headers   age: '0',
+53 verbose headers   connection: 'keep-alive',
+53 verbose headers   'x-served-by': 'cache-fra1225-FRA',
+53 verbose headers   'x-cache': 'MISS',
+53 verbose headers   'x-cache-hits': '0',
+53 verbose headers   'x-timer': 'S1434661656.636835,VS0,VE413' }
+54 silly registry.get cb [ 404,
+54 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+54 silly registry.get     'content-type': 'application/json',
+54 silly registry.get     'cache-control': 'max-age=0',
+54 silly registry.get     'content-length': '51',
+54 silly registry.get     'accept-ranges': 'bytes',
+54 silly registry.get     date: 'Thu, 18 Jun 2015 21:07:37 GMT',
+54 silly registry.get     via: '1.1 varnish',
+54 silly registry.get     age: '0',
+54 silly registry.get     connection: 'keep-alive',
+54 silly registry.get     'x-served-by': 'cache-fra1225-FRA',
+54 silly registry.get     'x-cache': 'MISS',
+54 silly registry.get     'x-cache-hits': '0',
+54 silly registry.get     'x-timer': 'S1434661656.636835,VS0,VE413' } ]
+55 silly lockFile e0b6bd45-bodyParser bodyParser@
+56 silly lockFile e0b6bd45-bodyParser bodyParser@
+57 error 404 404 Not Found: methodOverride
+57 error 404
+57 error 404 'methodOverride' is not in the npm registry.
+57 error 404 You should bug the author to publish it
+57 error 404 It was specified as a dependency of 'archivist-browser'
+57 error 404
+57 error 404 Note that you can also install from a
+57 error 404 tarball, folder, or http url, or git url.
+58 error System Darwin 14.3.0
+59 error command "node" "/usr/local/bin/npm" "install" "--save" "bodyParser" "methodOverride"
+60 error cwd /Users/danielbeilinson/Documents/code/archivist-browser
+61 error node -v v0.10.32
+62 error npm -v 1.4.28
+63 error code E404
+64 verbose exit [ 1, true ]
