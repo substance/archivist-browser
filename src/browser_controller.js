@@ -126,10 +126,10 @@ BrowserController.Prototype = function() {
       url: self.config.api_url+"/search/document?documentId="+encodeURIComponent(documentId)+"&searchString="+encodeURIComponent(searchStr),
       dataType: 'json',
       success: function(data) {
-        var elifeID = _.last(documentId.split("."));
+        var archivistID = _.last(documentId.split("."));
         data.document.id = documentId;
-        data.document.url = "http://lens.elifesciences.org/" + elifeID;
-        data.document.pdf_url = "http://cdn.elifesciences.org/elife-articles/"+elifeID+"/pdf/elife"+elifeID+".pdf";
+        data.document.url = "http://ost.d4s.io/editor#" + archivistID;
+        data.document.pdf_url = "http://ost.d4s.io/"+archivistID+"/pdf/elife"+archivistID+".pdf";
         data.searchStr = searchStr;
         self.previewData = data;
         cb(null);
@@ -164,8 +164,8 @@ BrowserController.Prototype = function() {
 
         // Patching docs
         _.each(result.hits.hits, function(doc) {
-          var elifeID = _.last(doc._id.split("."));
-          doc._source.url = "http://lens.elifesciences.org/" + elifeID;
+          var archivistID = _.last(doc._id.split("."));
+          doc._source.url = "http://ost.d4s.io/editor#" + archivistID;
         }, this);
 
         self.searchResult = new SearchResult({
