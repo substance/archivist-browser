@@ -8,7 +8,6 @@
     "ejs": "*",
     "express": "^4.12.4",
     "method-override": "^2.3.3",
-    "substance": "substance/substance#055e3d01178a5ae2fe776cc389ea15a1e4c9c4fe",
     "substance-application": "substance/application.git#master",
     "substance-util": "substance/util",
     "underscore": "^1.8.3"
