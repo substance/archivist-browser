@@ -13,8 +13,9 @@ var AVAILABLE_KEYWORDS = require("./available_keywords");
 
 // Used to initialize the SearchQuery model
 var EMPTY_QUERY = {
-  searchStr: "",
-  filters: {}
+  searchStr: "554a82e73a7f86f805fbed67",
+  from: 0,
+  to: 5000
 };
 
 // BrowserController
@@ -128,7 +129,7 @@ BrowserController.Prototype = function() {
       success: function(data) {
         var archivistID = _.last(documentId.split("."));
         data.document.id = documentId;
-        data.document.url = "http://ost.d4s.io/editor#" + archivistID;
+        data.document.url = "http://ost.d4s.io/archivist/editor#" + archivistID;
         data.document.pdf_url = "http://ost.d4s.io/"+archivistID+"/pdf/elife"+archivistID+".pdf";
         data.searchStr = searchStr;
         self.previewData = data;
@@ -155,7 +156,7 @@ BrowserController.Prototype = function() {
     var self = this;
 
     $.ajax({
-      url: this.config.api_url+"/search?searchQuery="+encodeURIComponent(JSON.stringify(searchQuery)),
+      url: this.config.api_url+"/search/subject?searchQuery="+encodeURIComponent(JSON.stringify(searchQuery)),
       dataType: 'json',
       success: function(result) {
 
@@ -165,7 +166,7 @@ BrowserController.Prototype = function() {
         // Patching docs
         _.each(result.hits.hits, function(doc) {
           var archivistID = _.last(doc._id.split("."));
-          doc._source.url = "http://ost.d4s.io/editor#" + archivistID;
+          doc._source.url = "http://ost.d4s.io/archivist/editor#" + archivistID;
         }, this);
 
         self.searchResult = new SearchResult({

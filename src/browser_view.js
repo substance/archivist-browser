@@ -164,9 +164,9 @@ BrowserView.Prototype = function() {
   };
 
   this.renderFacets = function() {
-    this.facetsView = new FacetsView(this.controller.searchResult.getFacets());
-    this.facetsEl.innerHTML = "";
-    this.facetsEl.appendChild(this.facetsView.render().el);
+    // this.facetsView = new FacetsView(this.controller.searchResult.getFacets());
+    // this.facetsEl.innerHTML = "";
+    // this.facetsEl.appendChild(this.facetsView.render().el);
   };
 
   // Display initial search result
